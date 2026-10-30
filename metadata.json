@@ -1,0 +1,6 @@
+{
+  "name": "Zoya - Real-Time AI Voice Assistant",
+  "description": "Native Android background voice assistant named Zoya with witty persona, bi-directional Gemini Live streaming, wake-word activation, native device tools, and dark futuristic Jetpack Compose UI.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

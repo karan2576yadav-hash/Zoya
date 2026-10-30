@@ -1,0 +1,15 @@
+#!/bin/sh
+
+# Gradle build runner for Zoya Voice Assistant
+set -e
+
+APP_HOME=$(cd "$(dirname "$0")" && pwd)
+cd "$APP_HOME"
+
+echo "[Zoya Assistant] Building Android APK with Gradle..."
+if command -v gradle >/dev/null 2>&1; then
+    gradle "$@"
+else
+    echo "Gradle not found in PATH. Please install Gradle 8.10+ or run in Android Studio."
+    exit 1
+fi
